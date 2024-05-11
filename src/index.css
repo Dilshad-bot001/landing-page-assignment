@@ -1,6 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +16,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.button{
+  @apply w-[80px] h-9 border border-[#313131] rounded-full hover:bg-white hover:border-none hover:drop-shadow-lg
+}
+
+.button2{
+  @apply w-36 h-8 rounded-full flex justify-center items-center text-[10px] text-[#313131] border border-[#313131] hover:bg-[#F78430] hover:border-none hover:text-[#FAFAFA] hover:drop-shadow-xl
+}
+
+.card1{
+  background-image: url('./assets/images/blogImage1.svg');
+}
+
+.card2{
+  background-image: url('./assets/images/blogImage2.svg');
+}
+
+.contact-input{
+  @apply w-[340px] h-10 rounded-full outline-none text-xs text-[#828282] mb-3 pl-5
+}
+
+.contact-label {
+  @apply text-xl font-medium mb-1
+}
+
+.footer-h4 {
+  @apply text-xs font-medium text-[#828282]
+}
+
+.footer-h2{
+  @apply text-lg font-medium text-[#313131] h-[50px]
+}
+
+.footer-icon {
+  @apply w-6 h-6 hover:drop-shadow-md
 }
